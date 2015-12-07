@@ -4,6 +4,7 @@ app:
     - .:/opt/sling
     - ./examples/module:/opt/example
     - ./examples/app:/opt/app
+    - ./.pypirc:/root/.pypirc
   working_dir: /opt
   ports:
     - 3000:3000
