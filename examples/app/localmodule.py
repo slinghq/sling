@@ -1,3 +1,9 @@
+class IndexResource(object):
+
+    def on_get(self, req, res):
+        res.body = 'Hello. This is app.'
+
+
 def install_module(app):
     """Installs this localmodule."""
-    install_module
+    app.api.add_route('/', IndexResource())
