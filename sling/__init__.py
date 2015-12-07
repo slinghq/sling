@@ -19,6 +19,10 @@ class Application(object):
 def create_app(modules=[]):
     app = Application()
 
+    # Install core modules.
+    from sling.core import logger
+    logger.install_module(app)
+
     for module in modules:
         module.install_module(app)
 
