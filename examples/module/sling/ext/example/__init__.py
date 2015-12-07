@@ -1,10 +1,10 @@
-__version__ = "0.1.0"
+__version__ = '0.1.0'
 
 
 class HelloResource(object):
 
     def on_get(self, req, res):
-        res.body = "Hello"
+        res.body = 'Hello'
 
 
 hello_resource = HelloResource()
