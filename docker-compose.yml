@@ -3,4 +3,7 @@ app:
   volumes:
     - .:/opt/sling
     - ./examples/module:/opt/example
+    - ./examples/app:/opt/app
   working_dir: /opt
+  ports:
+    - 3000:3000

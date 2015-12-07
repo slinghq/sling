@@ -1,6 +1,10 @@
 from setuptools import setup
 
 
+with open('requirements.txt', 'r') as f:
+    install_requires = [l.strip() for l in f.readlines()]
+
+
 setup(
     name='sling',
     version='0.1.0',
@@ -8,6 +12,7 @@ setup(
     license='Apache',
     author='SlingHQ',
     author_email='support@slinghq.com',
+    install_requires=install_requires,
     packages=['sling', 'sling.ext'],
     platforms='any',
     include_package_data=True,
