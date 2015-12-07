@@ -1,5 +1,6 @@
 app:
   build: .
   volumes:
-    - .:/opt/app
-  working_dir: /opt/app
+    - .:/opt/sling
+    - ./examples/module:/opt/example
+  working_dir: /opt
