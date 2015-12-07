@@ -11,7 +11,7 @@ class TransactionIdLogFilter(logging.Filter):
         return True
 
 
-class TransactionIdMiddleware(object):
+class TransactionIdLogMiddleware(object):
 
     def process_request(self, req, res):
         g.generate_transaction_id()
@@ -33,4 +33,4 @@ logger.addHandler(handler)
 
 
 def install_module(app):
-    app.middlewares.append(TransactionIdMiddleware())
+    app.middlewares.append(TransactionIdLogMiddleware())
