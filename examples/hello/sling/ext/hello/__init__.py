@@ -10,6 +10,7 @@ class HelloResource(object):
     def on_get(self, req, res):
         logger.info('Saying hello as module...')
         res.body = "Hello! I'm ExampleModule."
+        logger.info('Said hello as module!')
 
 
 def test_function(name):
