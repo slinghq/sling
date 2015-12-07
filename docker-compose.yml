@@ -2,7 +2,7 @@ app:
   build: .
   volumes:
     - .:/opt/sling
-    - ./examples/module:/opt/example
+    - ./examples/hello:/opt/hello
     - ./examples/app:/opt/app
     - ./.pypirc:/root/.pypirc
   working_dir: /opt

@@ -2,13 +2,13 @@ from setuptools import setup
 
 
 setup(
-    name='sling-example-module',
+    name='sling-hello',
     version='0.1.0',
     url='https://github.com/slinghq/sling',
     license='Apache',
     author='SlingHQ',
     author_email='support@slinghq.com',
-    packages=['sling.ext.example'],
+    packages=['sling.ext.hello'],
     platforms='any',
     include_package_data=True,
     zip_safe=False,

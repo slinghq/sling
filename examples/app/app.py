@@ -1,10 +1,10 @@
 from sling import create_app
-from sling.ext import example
+from sling.ext import hello
 import localmodule
 
 
 app = create_app([
-    example,
+    hello,
     localmodule,
 ])
 wsgi = app.wsgi
