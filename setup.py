@@ -13,7 +13,7 @@ setup(
     author='SlingHQ',
     author_email='support@slinghq.com',
     install_requires=install_requires,
-    packages=['sling', 'sling.ext'],
+    packages=['sling', 'sling.core', 'sling.ext'],
     platforms='any',
     include_package_data=True,
     zip_safe=False,

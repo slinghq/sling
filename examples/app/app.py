@@ -1,11 +1,14 @@
 from sling import create_app
 from sling.ext import example
-from modules import localmodule
+import localmodule
 
 
-app = create_app(
-    modules=[
-        example,
-        localmodule,
-    ]
-)
+app = create_app([
+    example,
+    localmodule,
+])
+wsgi = app.wsgi
+
+
+if __name__ == '__main__':
+    app.manage()
