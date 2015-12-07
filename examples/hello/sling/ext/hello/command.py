@@ -1,14 +1,15 @@
 from sling.core import command
-import logging
+from sling.core.logger import logger
 
 
-logger = logging.getLogger('hello.command')
+logger = logger.getChild('hello.command')
 
 
 @command.command(name='hello:greet')
 @command.argument('name')
 def greet(name):
     """Greets hello to a name."""
-    logger.debug('Greeting %s hello' % name)
+    greet_logger = logger.getChild(name)
+    greet_logger.debug('Greeting %s hello' % name)
     print 'Hello, %s' % name
-    logger.debug('Done greeting!')
+    greet_logger.debug('Done greeting!')
