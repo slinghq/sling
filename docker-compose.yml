@@ -1,0 +1,5 @@
+app:
+  build: .
+  volumes:
+    - .:/opt/app
+  working_dir: /opt/app
