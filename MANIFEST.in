@@ -1,2 +1,2 @@
-include README.md CONTRIBUTING.md LICENSE
+include README.md CONTRIBUTING.md LICENSE requirements.txt
 recursive-include examples *
