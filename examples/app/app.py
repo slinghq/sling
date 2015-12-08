@@ -30,8 +30,11 @@ app.add_middleware(HelloMiddleware)
 
 # Install a standard WSGI Middleware
 from werkzeug.contrib.profiler import ProfilerMiddleware
-app.add_wsgi_middleware(
-    ProfilerMiddleware, sort_by=('cumtime',), restrictions=('/opt', 30))
+app.add_wsgi_middleware(ProfilerMiddleware, sort_by=('cumtime',), restrictions=('/opt', 30))
+
+# Install werkzeug debugger
+from werkzeug.debug import DebuggedApplication
+app.add_wsgi_middleware(DebuggedApplication, evalex=True)
 
 wsgi = app.wsgi
 
