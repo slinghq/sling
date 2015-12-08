@@ -7,7 +7,7 @@ with open('requirements.txt', 'r') as f:
 
 setup(
     name='sling',
-    version='0.1.0',
+    version='0.1.1',
     url='https://github.com/slinghq/sling',
     license='Apache',
     author='SlingHQ',
