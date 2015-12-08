@@ -33,4 +33,4 @@ logger.addHandler(handler)
 
 
 def install_module(app):
-    app.middlewares.append(TransactionIdLogMiddleware())
+    app.add_middleware(TransactionIdLogMiddleware)
