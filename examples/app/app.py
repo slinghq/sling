@@ -1,5 +1,5 @@
-from sling import Application
-from sling.core.logger import logger
+from sling import Application, logger
+from sling import logger
 from sling.ext import hello
 import localmodule
 

@@ -1,7 +1,6 @@
 __version__ = '0.1.0'
 
-from sling.core.g import g
-from sling.core.logger import logger
+from sling import g, logger
 import sling
 
 
